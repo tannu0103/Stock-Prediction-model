@@ -1,0 +1,42 @@
+{
+    "ticker": "HDFCBANK.NS",
+    "company_name": "HDFC Bank",
+    "model_name": "RandomForestClassifier",
+    "accuracy": 0.52,
+    "precision": 0.3684210526315789,
+    "recall": 1.0,
+    "f1_score": 0.5384615384615384,
+    "roc_auc": 0.5079365079365079,
+    "feature_importances": {
+        "SMA_5": 0.13067932650210992,
+        "MACD": 0.11278769773452636,
+        "SMA_20": 0.09933208750857249,
+        "RSI_14": 0.09628656406055701,
+        "Volatility_5d": 0.09152759135723634,
+        "Daily_Return": 0.08579483426686424,
+        "MACD_Signal": 0.08122715189528025,
+        "Volume_Change": 0.07760842468254672,
+        "SMA_Ratio": 0.0692370921651766,
+        "sent_polarity": 0.045288493095678346,
+        "sent_compound_mean": 0.03635460415545302,
+        "sent_pos_mean": 0.033322209950979176,
+        "news_count": 0.025864059895313582,
+        "sent_neg_mean": 0.014689862729705912
+    },
+    "feature_columns": [
+        "Daily_Return",
+        "SMA_5",
+        "SMA_20",
+        "SMA_Ratio",
+        "Volatility_5d",
+        "RSI_14",
+        "MACD",
+        "MACD_Signal",
+        "Volume_Change",
+        "sent_compound_mean",
+        "sent_pos_mean",
+        "sent_neg_mean",
+        "sent_polarity",
+        "news_count"
+    ]
+}
