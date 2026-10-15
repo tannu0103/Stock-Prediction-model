@@ -1,0 +1,42 @@
+{
+    "ticker": "NVDA",
+    "company_name": "NVIDIA Corporation",
+    "model_name": "RandomForestClassifier",
+    "accuracy": 0.6153846153846154,
+    "precision": 0.6,
+    "recall": 0.5,
+    "f1_score": 0.5454545454545454,
+    "roc_auc": 0.6547619047619048,
+    "feature_importances": {
+        "SMA_20": 0.11355144097161016,
+        "SMA_5": 0.10707008134781619,
+        "Volatility_5d": 0.08715811679174566,
+        "MACD_Signal": 0.08471056748658054,
+        "Daily_Return": 0.08216457421097458,
+        "Volume_Change": 0.07935974324396357,
+        "MACD": 0.07161043291768192,
+        "RSI_14": 0.06921584902094413,
+        "sent_polarity": 0.06835831471582642,
+        "sent_pos_mean": 0.06820403588098595,
+        "SMA_Ratio": 0.06735635728460969,
+        "sent_compound_mean": 0.05928945503629777,
+        "news_count": 0.0265641930559723,
+        "sent_neg_mean": 0.015386838034991135
+    },
+    "feature_columns": [
+        "Daily_Return",
+        "SMA_5",
+        "SMA_20",
+        "SMA_Ratio",
+        "Volatility_5d",
+        "RSI_14",
+        "MACD",
+        "MACD_Signal",
+        "Volume_Change",
+        "sent_compound_mean",
+        "sent_pos_mean",
+        "sent_neg_mean",
+        "sent_polarity",
+        "news_count"
+    ]
+}

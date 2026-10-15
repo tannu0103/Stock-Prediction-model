@@ -1,0 +1,40 @@
+{
+    "model_name": "RandomForest",
+    "accuracy": 0.56,
+    "precision": 1.0,
+    "recall": 0.08333333333333333,
+    "f1_score": 0.15384615384615385,
+    "roc_auc": 0.5961538461538461,
+    "feature_importances": {
+        "MACD_Signal": 0.11279237844955746,
+        "Volatility_5d": 0.10532285613767316,
+        "Daily_Return": 0.09381918965104924,
+        "SMA_20": 0.09163163029582568,
+        "MACD": 0.08966517783130008,
+        "SMA_5": 0.0857221702648151,
+        "RSI_14": 0.08192932944624033,
+        "SMA_Ratio": 0.06929448207371212,
+        "Volume_Change": 0.06778925441329965,
+        "sent_polarity": 0.05402013826674622,
+        "sent_pos_mean": 0.05078062450159453,
+        "sent_compound_mean": 0.04784936335204885,
+        "sent_neg_mean": 0.025767499464994254,
+        "news_count": 0.023615905851143454
+    },
+    "feature_columns": [
+        "Daily_Return",
+        "SMA_5",
+        "SMA_20",
+        "SMA_Ratio",
+        "Volatility_5d",
+        "RSI_14",
+        "MACD",
+        "MACD_Signal",
+        "Volume_Change",
+        "sent_compound_mean",
+        "sent_pos_mean",
+        "sent_neg_mean",
+        "sent_polarity",
+        "news_count"
+    ]
+}

@@ -1,0 +1,42 @@
+{
+    "ticker": "RELIANCE.NS",
+    "company_name": "Reliance Industries",
+    "model_name": "RandomForestClassifier",
+    "accuracy": 0.68,
+    "precision": 0.7272727272727273,
+    "recall": 0.6153846153846154,
+    "f1_score": 0.6666666666666666,
+    "roc_auc": 0.5897435897435898,
+    "feature_importances": {
+        "SMA_Ratio": 0.1098227202698854,
+        "SMA_5": 0.10699234131558348,
+        "Volume_Change": 0.09622022330667426,
+        "Volatility_5d": 0.08752920454001813,
+        "MACD": 0.0847053732034373,
+        "SMA_20": 0.08322074866097386,
+        "MACD_Signal": 0.0781450231873619,
+        "RSI_14": 0.07693913467698521,
+        "Daily_Return": 0.07462265667835864,
+        "sent_polarity": 0.06310202746057246,
+        "sent_compound_mean": 0.05555134896910208,
+        "sent_pos_mean": 0.04496803777795629,
+        "news_count": 0.02326525478630786,
+        "sent_neg_mean": 0.01491590516678315
+    },
+    "feature_columns": [
+        "Daily_Return",
+        "SMA_5",
+        "SMA_20",
+        "SMA_Ratio",
+        "Volatility_5d",
+        "RSI_14",
+        "MACD",
+        "MACD_Signal",
+        "Volume_Change",
+        "sent_compound_mean",
+        "sent_pos_mean",
+        "sent_neg_mean",
+        "sent_polarity",
+        "news_count"
+    ]
+}

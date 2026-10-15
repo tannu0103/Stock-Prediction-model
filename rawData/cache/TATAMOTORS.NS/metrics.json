@@ -1,0 +1,42 @@
+{
+    "ticker": "TATAMOTORS.NS",
+    "company_name": "Tata Motors",
+    "model_name": "RandomForestClassifier",
+    "accuracy": 0.36,
+    "precision": 0.3333333333333333,
+    "recall": 1.0,
+    "f1_score": 0.5,
+    "roc_auc": 0.6102941176470588,
+    "feature_importances": {
+        "Volatility_5d": 0.09317882052168583,
+        "SMA_Ratio": 0.09305471588495566,
+        "MACD_Signal": 0.09082054490871426,
+        "MACD": 0.08947459143220111,
+        "Daily_Return": 0.08880658062499595,
+        "Volume_Change": 0.08768532593462315,
+        "RSI_14": 0.08708791603668345,
+        "SMA_5": 0.07713370062295573,
+        "SMA_20": 0.06331325730540785,
+        "sent_compound_mean": 0.0619834262342335,
+        "sent_pos_mean": 0.05662287079721382,
+        "sent_polarity": 0.056135737139630194,
+        "news_count": 0.03813289839888,
+        "sent_neg_mean": 0.016569614157819695
+    },
+    "feature_columns": [
+        "Daily_Return",
+        "SMA_5",
+        "SMA_20",
+        "SMA_Ratio",
+        "Volatility_5d",
+        "RSI_14",
+        "MACD",
+        "MACD_Signal",
+        "Volume_Change",
+        "sent_compound_mean",
+        "sent_pos_mean",
+        "sent_neg_mean",
+        "sent_polarity",
+        "news_count"
+    ]
+}

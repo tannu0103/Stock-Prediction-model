@@ -1,0 +1,42 @@
+{
+    "ticker": "TCS.NS",
+    "company_name": "Tata Consultancy Services",
+    "model_name": "RandomForestClassifier",
+    "accuracy": 0.32,
+    "precision": 0.23076923076923078,
+    "recall": 0.3,
+    "f1_score": 0.2608695652173913,
+    "roc_auc": 0.34,
+    "feature_importances": {
+        "Daily_Return": 0.11428035704391575,
+        "Volatility_5d": 0.09038000020806576,
+        "MACD_Signal": 0.08546756642356805,
+        "RSI_14": 0.0853059491802663,
+        "sent_polarity": 0.08390485772346055,
+        "Volume_Change": 0.07799096967979503,
+        "MACD": 0.07777900585835129,
+        "sent_pos_mean": 0.07487037765986367,
+        "SMA_20": 0.07306800524481374,
+        "SMA_5": 0.07286128348968271,
+        "SMA_Ratio": 0.06450395606747668,
+        "sent_compound_mean": 0.06413295440886115,
+        "news_count": 0.01838291367898432,
+        "sent_neg_mean": 0.017071803332895055
+    },
+    "feature_columns": [
+        "Daily_Return",
+        "SMA_5",
+        "SMA_20",
+        "SMA_Ratio",
+        "Volatility_5d",
+        "RSI_14",
+        "MACD",
+        "MACD_Signal",
+        "Volume_Change",
+        "sent_compound_mean",
+        "sent_pos_mean",
+        "sent_neg_mean",
+        "sent_polarity",
+        "news_count"
+    ]
+}

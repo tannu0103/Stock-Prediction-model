@@ -1,0 +1,42 @@
+{
+    "ticker": "WIPRO.NS",
+    "company_name": "Wipro",
+    "model_name": "RandomForestClassifier",
+    "accuracy": 0.56,
+    "precision": 0.5555555555555556,
+    "recall": 0.4166666666666667,
+    "f1_score": 0.47619047619047616,
+    "roc_auc": 0.641025641025641,
+    "feature_importances": {
+        "MACD": 0.12444524203132305,
+        "MACD_Signal": 0.12082276152611637,
+        "SMA_5": 0.11761617814651494,
+        "Volume_Change": 0.10348401573527584,
+        "Daily_Return": 0.0850776095609611,
+        "RSI_14": 0.07745259818562464,
+        "SMA_20": 0.06882669647353717,
+        "Volatility_5d": 0.06590981131492599,
+        "SMA_Ratio": 0.06389691804832133,
+        "sent_compound_mean": 0.04877180054411922,
+        "sent_pos_mean": 0.04139210774467898,
+        "sent_polarity": 0.040575048442492025,
+        "news_count": 0.029355797556673852,
+        "sent_neg_mean": 0.012373414689435473
+    },
+    "feature_columns": [
+        "Daily_Return",
+        "SMA_5",
+        "SMA_20",
+        "SMA_Ratio",
+        "Volatility_5d",
+        "RSI_14",
+        "MACD",
+        "MACD_Signal",
+        "Volume_Change",
+        "sent_compound_mean",
+        "sent_pos_mean",
+        "sent_neg_mean",
+        "sent_polarity",
+        "news_count"
+    ]
+}

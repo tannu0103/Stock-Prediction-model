@@ -1,0 +1,42 @@
+{
+    "ticker": "INFY.NS",
+    "company_name": "Infosys",
+    "model_name": "RandomForestClassifier",
+    "accuracy": 0.76,
+    "precision": 1.0,
+    "recall": 0.4,
+    "f1_score": 0.5714285714285714,
+    "roc_auc": 0.6066666666666667,
+    "feature_importances": {
+        "MACD_Signal": 0.10213718961402989,
+        "Daily_Return": 0.094087318401,
+        "MACD": 0.08613897819883433,
+        "RSI_14": 0.08571861010672986,
+        "sent_polarity": 0.08271902321461376,
+        "Volatility_5d": 0.07972604603455366,
+        "Volume_Change": 0.07946165617667852,
+        "SMA_Ratio": 0.07299998923518491,
+        "SMA_20": 0.07092805644941265,
+        "SMA_5": 0.0702353841426094,
+        "sent_compound_mean": 0.06555205398452621,
+        "sent_pos_mean": 0.05211411033306483,
+        "news_count": 0.03359785742099509,
+        "sent_neg_mean": 0.02458372668776663
+    },
+    "feature_columns": [
+        "Daily_Return",
+        "SMA_5",
+        "SMA_20",
+        "SMA_Ratio",
+        "Volatility_5d",
+        "RSI_14",
+        "MACD",
+        "MACD_Signal",
+        "Volume_Change",
+        "sent_compound_mean",
+        "sent_pos_mean",
+        "sent_neg_mean",
+        "sent_polarity",
+        "news_count"
+    ]
+}

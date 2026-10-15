@@ -1,0 +1,42 @@
+{
+    "ticker": "TSLA",
+    "company_name": "Tesla Inc",
+    "model_name": "RandomForestClassifier",
+    "accuracy": 0.46153846153846156,
+    "precision": 0.4583333333333333,
+    "recall": 0.9166666666666666,
+    "f1_score": 0.6111111111111112,
+    "roc_auc": 0.6904761904761905,
+    "feature_importances": {
+        "Volume_Change": 0.11629008073280316,
+        "SMA_5": 0.09342544429202729,
+        "Daily_Return": 0.09078090009671452,
+        "SMA_Ratio": 0.086903281790966,
+        "RSI_14": 0.08049884189650201,
+        "MACD": 0.08033873700637725,
+        "sent_polarity": 0.07799842912879874,
+        "SMA_20": 0.07266330953321994,
+        "MACD_Signal": 0.06954559302759661,
+        "Volatility_5d": 0.06619335244288735,
+        "sent_compound_mean": 0.06495120704431989,
+        "sent_pos_mean": 0.06478569876786366,
+        "news_count": 0.02004005123258914,
+        "sent_neg_mean": 0.015585073007334424
+    },
+    "feature_columns": [
+        "Daily_Return",
+        "SMA_5",
+        "SMA_20",
+        "SMA_Ratio",
+        "Volatility_5d",
+        "RSI_14",
+        "MACD",
+        "MACD_Signal",
+        "Volume_Change",
+        "sent_compound_mean",
+        "sent_pos_mean",
+        "sent_neg_mean",
+        "sent_polarity",
+        "news_count"
+    ]
+}

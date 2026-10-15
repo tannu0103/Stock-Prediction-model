@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MARP — Multi-Stock Sentiment & ML Predictor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+</head>
+<body>
+
+    <!-- Loading Spinner Overlay -->
+    <div id="loading-overlay" class="loading-overlay hidden">
+        <div class="spinner-box">
+            <div class="spinner"></div>
+            <div id="loading-text" class="loading-text">Fetching live data & running ML NLP pipeline...</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Header Bar -->
+        <header class="navbar">
+            <div class="brand">
+                <div class="brand-icon">📈</div>
+                <div>
+                    <h1>MARP AI Dashboard</h1>
+                    <p style="font-size: 12px; color: var(--text-muted);">Multi-Stock Classifier with NLP Sentiment & Technical Indicators</p>
+                </div>
+            </div>
+            
+            <!-- Search Bar & Ticker Badge -->
+            <div class="header-controls">
+                <form id="search-form" class="search-form" onsubmit="return false;">
+                    <input type="text" id="stock-search-input" class="search-input" placeholder="Search ticker (e.g. INFY, AAPL, RELIANCE)..." autocomplete="off" />
+                    <button type="submit" id="stock-search-btn" class="search-btn">🔍 Search</button>
+                </form>
+
+                <div class="ticker-badge">
+                    <span class="status-dot"></span>
+                    <span id="current-ticker-display">TCS.NS</span>
+                    <span id="current-company-display" style="color: var(--text-muted); font-size: 12px;">Tata Consultancy Services</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Quick Stock Selector Pills -->
+        <div class="pills-bar">
+            <span class="pills-label">⚡ Top Pre-Processed Stocks:</span>
+            <div id="quick-stock-pills" class="pills-container">
+                <!-- Dynamically populated -->
+            </div>
+        </div>
+
+        <!-- Main Dashboard Top Grid -->
+        <div class="dashboard-grid">
+            <!-- AI Directional Prediction Card -->
+            <div class="card prediction-card">
+                <div class="prediction-title">AI Directional Forecast (Next Day)</div>
+                <div id="direction-badge" class="direction-badge up">
+                    📈 LOADING...
+                </div>
+                <div class="confidence-box">
+                    <div style="font-size: 12px; color: var(--text-muted);">Model Probability Confidence</div>
+                    <div id="confidence-value" class="confidence-val">--%</div>
+                </div>
+            </div>
+
+            <!-- Key Indicators Card Grid -->
+            <div class="card">
+                <div class="card-header">
+                    <h2>Latest Market & Sentiment Indicators</h2>
+                    <span style="font-size: 12px; color: var(--text-muted);">Updated Trading Day</span>
+                </div>
+                <div class="metrics-row">
+                    <div class="metric-item">
+                        <div class="metric-label">Latest Close</div>
+                        <div id="val-close" class="metric-value">₹--</div>
+                    </div>
+                    <div class="metric-item">
+                        <div class="metric-label">Daily Return</div>
+                        <div id="val-return" class="metric-value">--%</div>
+                    </div>
+                    <div class="metric-item">
+                        <div class="metric-label">RSI (14-Day)</div>
+                        <div id="val-rsi" class="metric-value">--</div>
+                    </div>
+                    <div class="metric-item">
+                        <div class="metric-label">NLP Sentiment</div>
+                        <div id="val-sent" class="metric-value">--</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Charts Section -->
+        <div class="charts-section">
+            <div class="card">
+                <div class="card-header">
+                    <h2>Stock Price Trend & Moving Averages</h2>
+                    <span style="font-size: 12px; color: var(--accent-indigo);">Interactive Chart</span>
+                </div>
+                <div id="price-chart" class="chart-container"></div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <h2>Daily NLP Sentiment Compound Index</h2>
+                    <span style="font-size: 12px; color: var(--accent-cyan);">Financial News Polarity</span>
+                </div>
+                <div id="sentiment-chart" class="chart-container" style="min-height: 280px;"></div>
+            </div>
+        </div>
+
+        <!-- Bottom Grid: Features & News -->
+        <div class="bottom-grid">
+            <!-- Feature Importance Card -->
+            <div class="card">
+                <div class="card-header">
+                    <h2>ML Feature Importance (Tech vs NLP)</h2>
+                    <div style="font-size: 12px; color: var(--text-muted);">
+                        Model: <strong id="model-name" style="color: var(--text-main);">RF</strong> | 
+                        Acc: <strong id="model-acc" style="color: var(--accent-emerald);">--%</strong> | 
+                        F1: <strong id="model-f1" style="color: var(--accent-cyan);">--</strong>
+                    </div>
+                </div>
+                <div id="feature-importance-list" class="feature-list">
+                    <p style="color: var(--text-muted);">Loading feature weights...</p>
+                </div>
+            </div>
+
+            <!-- Financial News Feed Card -->
+            <div class="card">
+                <div class="card-header">
+                    <h2>Financial News Sentiment Feed</h2>
+                    <span style="font-size: 12px; color: var(--text-muted);">NLP Vader Scored</span>
+                </div>
+                <div id="news-feed-list" class="news-feed">
+                    <p style="color: var(--text-muted);">Loading latest news...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+{
+    "ticker": "GOOGL",
+    "company_name": "Alphabet Google",
+    "model_name": "RandomForestClassifier",
+    "accuracy": 0.6153846153846154,
+    "precision": 0.6,
+    "recall": 0.6923076923076923,
+    "f1_score": 0.6428571428571429,
+    "roc_auc": 0.680473372781065,
+    "feature_importances": {
+        "RSI_14": 0.10471938953385432,
+        "MACD_Signal": 0.09677897197295596,
+        "MACD": 0.09237012034274542,
+        "SMA_5": 0.08915202223799051,
+        "Volatility_5d": 0.08863824723946015,
+        "SMA_20": 0.08863189397675933,
+        "Daily_Return": 0.08792207296495519,
+        "Volume_Change": 0.0778649351418136,
+        "SMA_Ratio": 0.06775276405104232,
+        "sent_polarity": 0.05638152661446602,
+        "sent_compound_mean": 0.05472831174569519,
+        "sent_pos_mean": 0.0446657090368945,
+        "sent_neg_mean": 0.029003620778190218,
+        "news_count": 0.021390414363177415
+    },
+    "feature_columns": [
+        "Daily_Return",
+        "SMA_5",
+        "SMA_20",
+        "SMA_Ratio",
+        "Volatility_5d",
+        "RSI_14",
+        "MACD",
+        "MACD_Signal",
+        "Volume_Change",
+        "sent_compound_mean",
+        "sent_pos_mean",
+        "sent_neg_mean",
+        "sent_polarity",
+        "news_count"
+    ]
+}

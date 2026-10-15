@@ -1,0 +1,42 @@
+{
+    "ticker": "AAPL",
+    "company_name": "Apple Inc",
+    "model_name": "RandomForestClassifier",
+    "accuracy": 0.5,
+    "precision": 0.47619047619047616,
+    "recall": 0.8333333333333334,
+    "f1_score": 0.6060606060606061,
+    "roc_auc": 0.5476190476190477,
+    "feature_importances": {
+        "Daily_Return": 0.1408683619765667,
+        "SMA_5": 0.10581829954986569,
+        "Volume_Change": 0.1002389373785748,
+        "MACD_Signal": 0.09722770236095857,
+        "RSI_14": 0.08820444310821461,
+        "Volatility_5d": 0.08669188398689454,
+        "MACD": 0.08009953937501496,
+        "SMA_Ratio": 0.058261743143002705,
+        "SMA_20": 0.05711720377952559,
+        "sent_polarity": 0.05568791984846494,
+        "sent_compound_mean": 0.05042286525312993,
+        "sent_pos_mean": 0.04308003465474085,
+        "news_count": 0.02592075594316886,
+        "sent_neg_mean": 0.010360309641877178
+    },
+    "feature_columns": [
+        "Daily_Return",
+        "SMA_5",
+        "SMA_20",
+        "SMA_Ratio",
+        "Volatility_5d",
+        "RSI_14",
+        "MACD",
+        "MACD_Signal",
+        "Volume_Change",
+        "sent_compound_mean",
+        "sent_pos_mean",
+        "sent_neg_mean",
+        "sent_polarity",
+        "news_count"
+    ]
+}

@@ -1,0 +1,42 @@
+{
+    "ticker": "MSFT",
+    "company_name": "Microsoft Corporation",
+    "model_name": "RandomForestClassifier",
+    "accuracy": 0.6153846153846154,
+    "precision": 0.6923076923076923,
+    "recall": 0.6,
+    "f1_score": 0.6428571428571429,
+    "roc_auc": 0.6909090909090909,
+    "feature_importances": {
+        "Volume_Change": 0.11634921099689016,
+        "Volatility_5d": 0.1135650510837501,
+        "Daily_Return": 0.09327891142896119,
+        "MACD_Signal": 0.09098788233488862,
+        "MACD": 0.08611399454753954,
+        "SMA_5": 0.08290785519220767,
+        "RSI_14": 0.08205357844350805,
+        "SMA_20": 0.07735840536504991,
+        "SMA_Ratio": 0.07227951832001216,
+        "sent_polarity": 0.060458576979337104,
+        "sent_compound_mean": 0.05764162574704217,
+        "sent_pos_mean": 0.03620838099155271,
+        "news_count": 0.022463722789596612,
+        "sent_neg_mean": 0.008333285779664244
+    },
+    "feature_columns": [
+        "Daily_Return",
+        "SMA_5",
+        "SMA_20",
+        "SMA_Ratio",
+        "Volatility_5d",
+        "RSI_14",
+        "MACD",
+        "MACD_Signal",
+        "Volume_Change",
+        "sent_compound_mean",
+        "sent_pos_mean",
+        "sent_neg_mean",
+        "sent_polarity",
+        "news_count"
+    ]
+}
